@@ -169,7 +169,7 @@ function ReadMeLeonor() {
 					</motion.h2>
 					<motion.h3 variants={zoomIn}>
 						<MotionLink
-							href="https://leonorberdichevsky.com"
+							href="https://www.leonorb-homeopata.com/"
 							target="_blank"
 							className={styles["link-readme"] + " " + styles["text-flex-div"]}
 							whileHover={hoverLink}

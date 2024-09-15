@@ -146,6 +146,11 @@ export const fadeInAndChangeBgColor = {
 			"var(--gradientPurple)",
 			"var(--gradientPink)",
 			"var(--gradientBlue)",
+			"var(--gradientOrange)",
+			"var(--gradientCyan)",
+			"var(--gradientGray)",
+
+
 		],
 		transition: {
 			delayChildren: 1,
@@ -153,7 +158,7 @@ export const fadeInAndChangeBgColor = {
 			opacity: { duration: 2, ease: "easeInOut" },
 			backgroundImage: {
 				type: "tween",
-				duration: 30,
+				duration: 9,
 				ease: "easeInOut",
 				repeat: Infinity,
 				repeatType: "reverse",
