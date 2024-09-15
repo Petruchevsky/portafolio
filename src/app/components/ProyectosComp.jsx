@@ -110,6 +110,7 @@ export default function ProyectosComp() {
 				<video
 					loop
 					muted
+					playsInline
 					autoPlay
 					src="https://res.cloudinary.com/dkkvoyfqz/video/upload/v1721843215/meteors-video_oaxgqf.mp4"
 				/>
