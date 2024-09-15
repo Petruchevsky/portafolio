@@ -386,7 +386,7 @@
 	}
 
 	.space-section {
-		height: 93.5rem;
+		height: auto;
 		padding: 2rem 0;
 		margin-bottom: 3rem;
 		gap: 1rem;
