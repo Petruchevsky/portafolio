@@ -78,9 +78,9 @@ function ReadMeLeonor() {
 							deseo de tener una página autoadministrable con un diseño
 							minimalista, colores suaves y carente de animaciones para
 							transmitir tranquilidad, seriedad y confianza a sus pacientes. El
-							objetivo general del sitio es informar a sus potenciales pacientes
-							de terapias alternativas naturistas como lo es la homeopatía,
-							informar sobre el alcance medicinal de la misma, exponer
+							objetivo general del sitio es dar a conocer a la gente
+							terapias alternativas naturistas como lo es la homeopatía,
+							su alcance medicinal y terapéutico, exponer
 							testimonios de pacientes que han logrado la sanación sin haberlo
 							logrado antes con medicina alópata convencional y el objetivo
 							principal es agendar citas médicas virtuales de manera amigable y

@@ -28,6 +28,7 @@ function SelectedProjectLeonor({ toggleSelectedProject }) {
 				whileInView="show"
 				viewport={1}
 				exit="exit"
+				layout
 			>
 				<motion.div
 					className="selected-project-title-container"
@@ -55,7 +56,7 @@ function SelectedProjectLeonor({ toggleSelectedProject }) {
 						onClick={() => toggleSelectedProject(null)}
 						whileHover={hover}>
 						<motion.div variants={fadeInRotate}>
-							<IoArrowBackCircle className="animated-icon" />
+							<IoArrowBackCircle className="selected-project-icon" />
 						</motion.div>
 						<motion.p variants={zoomIn}>Volver</motion.p>
 					</motion.div>
@@ -65,7 +66,7 @@ function SelectedProjectLeonor({ toggleSelectedProject }) {
 						variants={slideFromLeft}
 						whileHover={hover}>
 						<motion.div variants={fadeInRotate}>
-							<GrGithub className="animated-icon" />
+							<GrGithub className="selected-project-icon" />
 						</motion.div>
 						<motion.p variants={zoomIn}>Github</motion.p>
 					</MotionLink>
@@ -75,7 +76,7 @@ function SelectedProjectLeonor({ toggleSelectedProject }) {
 						variants={slideFromLeft}
 						whileHover={hover}>
 						<motion.div variants={fadeInRotate}>
-							<BsFiletypeMd className="animated-icon" />
+							<BsFiletypeMd className="selected-project-icon" />
 						</motion.div>
 						<motion.p variants={zoomIn}>ReadMe</motion.p>
 					</MotionLink>
@@ -85,7 +86,7 @@ function SelectedProjectLeonor({ toggleSelectedProject }) {
 						variants={slideFromLeft}
 						whileHover={hover}>
 						<motion.div variants={fadeInRotate}>
-							<TbWorldWww className="animated-icon" />
+							<TbWorldWww className="selected-project-icon" />
 						</motion.div>
 						<motion.p variants={zoomIn}>Website</motion.p>
 					</MotionLink>

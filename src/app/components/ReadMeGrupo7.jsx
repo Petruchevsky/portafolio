@@ -139,7 +139,7 @@ function ReadMeGrupo7() {
 						<motion.p variants={zoomIn}>
 							NextJS, PostgreSQL, Envío de correos
 							electrónicos con NodeMailer, Administración de Correo Corporativo
-							con CPanel.
+							con cPanel.
 						</motion.p>
 					</motion.div>
 					<motion.div variants={container2} className={styles["text-flex-div"]}>
@@ -159,7 +159,7 @@ function ReadMeGrupo7() {
 					<motion.div variants={container2} className={styles["text-flex-div"]}>
 						<motion.h3 variants={zoomIn}>Deploy</motion.h3>
 						<motion.p variants={zoomIn}>
-							Frontend y Backend en un solo proyecto alojado en Vercel.
+							Frontend y Backend ambos construídos por separado con NextJS y alojados en Vercel.
 						</motion.p>
 					</motion.div>
 					<motion.div variants={container2} className={styles["text-flex-div"]}>

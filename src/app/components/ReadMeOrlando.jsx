@@ -73,10 +73,10 @@ function ReadMeOrlando() {
 					<motion.div variants={container2} className={styles["text-flex-div"]}>
 						<motion.p variants={zoomIn}>
 							Mi cliente, el Abogado de Familia, Civil y Sucesorio Orlando Rojas,
-                     necesitaba un sitio web que reflejara su seriedad y compromiso con sus
+                     necesitaba un sitio web que comunicara de manera implícita la confidencialidad, seriedad y compromiso que él mantiene con sus
                      clientes. El diseño del sitio web fue pensado para transmitir estos
                      valores a través de colores oscuros y un diseño minimalista. El sitio
-                     web es completamente autoadministrable, lo que permite a Orlando
+                     web es completamente autoadministrable, lo que permite al administrador
                      actualizar y gestionar su contenido de manera fácil y rápida.
 						</motion.p>
 					</motion.div>
@@ -115,7 +115,7 @@ function ReadMeOrlando() {
 						<motion.h3 variants={zoomIn}>Backend</motion.h3>
 						<motion.p variants={zoomIn}>
 							NextJS, PostgreSQL, Envío de correos electrónicos con NodeMailer, 
-							Administración de Correo Corporativo con CPanel.
+							Administración de Correo Corporativo con cPanel.
 						</motion.p>
 					</motion.div>
 					<motion.div variants={container2} className={styles["text-flex-div"]}>

@@ -8,8 +8,15 @@ const inter = Inter({ subsets: ["latin"] });
 const exo = Exo({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Mi Portafolio",
-  description: "Bienvenido a mi portafolio!",
+	openGraph: {
+		title: "Mi Portafolio",
+		description: "Bienvenido a mi portafolio!",
+		images: {
+			url: "https://res.cloudinary.com/dkkvoyfqz/image/upload/v1719591924/logo-blanco_epeurp.png",
+		},
+		locale: "es_CL",
+		type: "website",
+	},
 };
 
 export default function RootLayout({ children }) {

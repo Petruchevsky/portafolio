@@ -10,7 +10,7 @@ function Navbar() {
 	return (
 		<nav>
 			<div className="nav-item-div">
-				<Bounce delay={400} className="reveal-box">
+				<Bounce delay={100} className="reveal-box">
 					<Link href="/" className="btn">
 						<FaHome />
 						Inicio
@@ -18,7 +18,7 @@ function Navbar() {
 				</Bounce>
 			</div>
 			<div className="nav-item-div">
-				<Bounce delay={700} className="reveal-box">
+				<Bounce delay={300} className="reveal-box">
           <Link href="/sobre-mi" className="btn">
             <BsInfoSquareFill />
             Sobre Mí
@@ -26,7 +26,7 @@ function Navbar() {
         </Bounce>
 			</div>
 			<div className="nav-item-div">
-				<Bounce delay={1000} className="reveal-box">
+				<Bounce delay={500} className="reveal-box">
           <Link href="/proyectos" className="btn">
             <AiFillProduct />
             Proyectos
@@ -34,7 +34,7 @@ function Navbar() {
         </Bounce>
 			</div>
 			<div className="nav-item-div">
-				<Bounce delay={1200} className="reveal-box">
+				<Bounce delay={700} className="reveal-box">
           <Link href="/contacto" className="btn">
             <AiFillMessage />
             Contacto

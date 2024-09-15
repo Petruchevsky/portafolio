@@ -7,7 +7,8 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	height: auto;
+	min-height: 100vh;
+	overflow: hidden;
 }
 
 .programing {
@@ -26,6 +27,7 @@
 	gap: 2rem;
 	margin: 5rem 0 35rem 0;
 	position: relative;
+	flex-grow: 1;
 }
 
 .big-h1 {
@@ -143,28 +145,28 @@
 
 	.big-h1 {
 		font-size: 6rem;
-		margin-left: 0;
+		margin-left: 7%;
 	}
 
 	.normal-h1 {
-		margin-left: 12%;
+		margin-left: 15%;
 	}
 	
 	.text-container h2 {
-		margin-left: 21%;
+		margin-left: 22%;
 	}
 	
 	.text-container h3 {
-		margin-left: 38%;
+		margin-left: 36%;
 	}
 	
 	.text-container h4 {
-		margin-left: 54%;
+		margin-left: 51%;
 	}
 
 	.heart {
 		width: 3.5rem;
-		margin-left: 93%;
+		margin-left: 82%;
 	}
 
 	.programing {
@@ -222,11 +224,11 @@
 
 	.big-h1 {
 		font-size: 5rem;
-		margin-left: 0;
+		margin-left: 5%;
 	}
 
 	.normal-h1 {
-		margin-left: 12%;
+		margin-left: 14%;
 	}
 	
 	.text-container h2 {
@@ -243,7 +245,7 @@
 
 	.heart {
 		width: 3rem;
-		margin-left: 93%;
+		margin-left: 89%;
 	}
 
 	.programing {
@@ -387,7 +389,7 @@
 	.text-container {
 		margin: 1rem 0 0rem 0;
 		align-items: center;
-		gap: 1rem;
+		gap: 2rem;
 	}
 
 	.big-h1 {

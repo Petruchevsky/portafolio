@@ -129,6 +129,7 @@ export default function ProyectosComp() {
 							initial="hidden"
 							whileInView="show"
 							exit="exit"
+							layout
 						>
 							<motion.div
 								className="project"

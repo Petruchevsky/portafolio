@@ -172,7 +172,7 @@ export const fadeInAndChangeBgColor2 = {
 		],
 		transition: {
 			delayChildren: 1,
-			staggerChildren: 0.5,
+			staggerChildren: 0.3,
 			opacity: { duration: 2, ease: "easeInOut" },
 			backgroundImage: {
 				type: "tween",

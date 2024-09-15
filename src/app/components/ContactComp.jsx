@@ -12,7 +12,7 @@ import { LiaTelegramPlane } from "react-icons/lia";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { TbFaceIdError } from "react-icons/tb";
-import { IoMdMailUnread, IoIosRefresh, IoMdDownload  } from "react-icons/io";
+import { IoMdMailUnread, IoIosRefresh, IoMdDownload } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { GrStatusGood } from "react-icons/gr";
 import { LogoMoisesWEBAnimatedSVG } from "./AnimatedIconsSVG";
@@ -23,9 +23,12 @@ import {
 	fadeInAndChangeBgColor2,
 	fadeInAndChangeBgColor3,
 	fadeInWithGlow,
+	fadeIn,
 	hoverContact,
 	hoverLink2,
 	zoomIn,
+	slideFromDownRotateY,
+	zoomInRotate,
 } from "../styles/variants";
 
 const contactStrings = [
@@ -53,7 +56,9 @@ function ContactComp() {
 
 		if (!name || !email || !subject || !message) {
 			setClassName("btn-contacto-error");
-			setBtnText(<TypedTextFaster strings={["Por favor, completa todos los campos"]} />);
+			setBtnText(
+				<TypedTextFaster strings={["Por favor, completa todos los campos"]} />
+			);
 			setBtnIcon(<TbFaceIdError className="svg" />);
 			console.log("bloque if ejecutado");
 
@@ -68,11 +73,15 @@ function ContactComp() {
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 		if (!emailRegex.test(email)) {
-			 setClassName("btn-contacto-error");
-			 setBtnText(<TypedTextFaster strings={["Por favor, ingresa un correo electrónico válido."]} />);
-			 setBtnIcon(<TbFaceIdError className="svg" />);
+			setClassName("btn-contacto-error");
+			setBtnText(
+				<TypedTextFaster
+					strings={["Por favor, ingresa un correo electrónico válido."]}
+				/>
+			);
+			setBtnIcon(<TbFaceIdError className="svg" />);
 
-			 setTimeout(() => {
+			setTimeout(() => {
 				setClassName("btn-contacto");
 				setBtnText(<TypedTextFaster strings={["Enviar Mensaje"]} />);
 				setBtnIcon(<LiaTelegramPlane className="svg" />);
@@ -81,7 +90,9 @@ function ContactComp() {
 		}
 
 		setClassName("btn-contacto-success");
-		setBtnText(<TypedTextFaster strings={["Estamos enviando tu mensaje..."]} />);
+		setBtnText(
+			<TypedTextFaster strings={["Estamos enviando tu mensaje..."]} />
+		);
 		setBtnIcon(<Spinner animation="grow" className="spinner-grow-size" />);
 
 		try {
@@ -95,17 +106,25 @@ function ContactComp() {
 
 			if (!res.ok) {
 				setClassName("btn-contacto-error");
-				setBtnText(<TypedTextFaster strings={["Lo sentimos...","Algo salió Mal con tu Email"]} />);
+				setBtnText(
+					<TypedTextFaster
+						strings={["Lo sentimos...", "Algo salió Mal con tu Email"]}
+					/>
+				);
 				setBtnIcon(<TbFaceIdError className="svg" />);
 				throw new Error("Algo salió Mal con tu Email");
 			}
 
 			setClassName("btn-contacto-success");
-			setBtnText(<TypedTextFaster strings={["Mensaje Enviado Exitosamente!"]} />);
+			setBtnText(
+				<TypedTextFaster strings={["Mensaje Enviado Exitosamente!"]} />
+			);
 			setBtnIcon(<GrStatusGood className="svg" />);
 
 			setTimeout(() => {
-				setBtnText(<TypedTextFaster strings={["Te responderé lo antes posible!"]} />);
+				setBtnText(
+					<TypedTextFaster strings={["Te responderé lo antes posible!"]} />
+				);
 				setBtnIcon(<GrStatusGood className="svg" />);
 			}, 2500);
 
@@ -118,10 +137,13 @@ function ContactComp() {
 				setBtnText(<TypedTextFaster strings={["Enviar Nuevo Mensaje"]} />);
 				setBtnIcon(<LiaTelegramPlane className="svg" />);
 			}, 8000);
-
 		} catch (error) {
 			setClassName("btn-contacto-error");
-			setBtnText(<TypedTextFaster strings={["Lo sentimos...","Algo salió Mal con tu Email"]} />);
+			setBtnText(
+				<TypedTextFaster
+					strings={["Lo sentimos...", "Algo salió Mal con tu Email"]}
+				/>
+			);
 			setBtnIcon(<TbFaceIdError className="svg" />);
 
 			setTimeout(() => {
@@ -129,7 +151,14 @@ function ContactComp() {
 				setEmail("");
 				setSubject("");
 				setMessage("");
-				setBtnText(<TypedTextFaster strings={["Inténtalo de nuevo...", "O por favor refresca la página"]} />);
+				setBtnText(
+					<TypedTextFaster
+						strings={[
+							"Inténtalo de nuevo...",
+							"O por favor refresca la página",
+						]}
+					/>
+				);
 				setBtnIcon(<IoIosRefresh className="svg" />);
 			}, 3500);
 
@@ -140,7 +169,6 @@ function ContactComp() {
 			}, 9000);
 		}
 	};
-
 
 	return (
 		<motion.main
@@ -211,71 +239,77 @@ function ContactComp() {
 					</motion.form>
 				</setcion>
 
-				<section className="section-datos-contacto">
+				<motion.section
+					className="section-datos-contacto"
+					variants={zoomIn}
+					initial="hidden"
+					whileInView="show"
+				>
 					<motion.div variants={container4} className="title-logo-div">
-						<motion.h1 variants={fadeInWithGlow} className="h1-contacto">Contacto</motion.h1>
+						<motion.h1 variants={fadeInWithGlow} className="h1-contacto">
+							Contacto
+						</motion.h1>
 						<LogoMoisesWEBAnimatedSVG className="logo-contacto" />
 					</motion.div>
 
-					<motion.div variants={fadeInAndChangeBgColor2} initial="hidden" whileInView="show" className="div-datos">
-							<MotionLink variants={zoomIn}
-								className="link item-div-datos"
-								href="tel:+56961964148"
-								target="_blank"
-							>
-							<motion.div variants={zoomIn} style={{ display: "flex", gap: "1rem" }}>
+					<motion.div variants={fadeInAndChangeBgColor2} className="div-datos">
+						<Link
+							className="link item-div-datos"
+							href="tel:+56961964148"
+							target="_blank"
+						>
+							<div style={{ display: "flex", gap: "1rem" }}>
 								<BsFillTelephoneInboundFill className="svg-contacto" />
-							</motion.div>
-								<h4>+56 9 6196 4148</h4>
-							</MotionLink>
+							</div>
+							<h4>+56 9 6196 4148</h4>
+						</Link>
 
-							<MotionLink variants={zoomIn}
-								className="link item-div-datos"
-								href="https://wa.me/56961964148?text=Hola Moisés,%20estuve%20viendo%20tu%20portafolio%20y%20quisiera%20saber%20si%20podemos%20conversar%20un%20momento..."
-								target="_blank"
-							>
-							<motion.div variants={zoomIn} style={{ display: "flex", gap: "1rem" }}>
-							<FaWhatsapp className="svg-contacto" />
-							</motion.div>
-								<h4>Enviar Whatsapp</h4>
-							</MotionLink>
+						<Link
+							className="link item-div-datos"
+							href="https://wa.me/56961964148?text=Hola Moisés,%20estuve%20viendo%20tu%20portafolio%20y%20quisiera%20saber%20si%20podemos%20conversar%20un%20momento..."
+							target="_blank"
+						>
+							<div style={{ display: "flex", gap: "1rem" }}>
+								<FaWhatsapp className="svg-contacto" />
+							</div>
+							<h4>Enviar Whatsapp</h4>
+						</Link>
 
-							<MotionLink variants={zoomIn}
-								className="link item-div-datos"
-								href="mailto:hola@moises-web.cl?subject=Hola Moisés!"
-								target="_blank"
-							>
-							<motion.div variants={zoomIn} style={{ display: "flex", gap: "1rem" }}>
-							<IoMdMailUnread className="svg-contacto" />
-							</motion.div>
+						<Link
+							className="link item-div-datos"
+							href="mailto:hola@moises-web.cl?subject=Hola Moisés!"
+							target="_blank"
+						>
+							<div style={{ display: "flex", gap: "1rem" }}>
+								<IoMdMailUnread className="svg-contacto" />
+							</div>
 							<h4>hola@moises-web.cl</h4>
-							</MotionLink>
+						</Link>
 
-							<MotionLink variants={zoomIn}
-								className="link item-div-datos"
-								href="https://maps.app.goo.gl/JLQPSpCtvKWiP9xg8"
-								target="_blank"
-							>
-							<motion.div variants={zoomIn} style={{ display: "flex", gap: "1rem" }}>
-							<FaMapLocationDot className="svg-contacto" />
-							</motion.div>
+						<Link
+							className="link item-div-datos"
+							href="https://maps.app.goo.gl/JLQPSpCtvKWiP9xg8"
+							target="_blank"
+						>
+							<div style={{ display: "flex", gap: "1rem" }}>
+								<FaMapLocationDot className="svg-contacto" />
+							</div>
 							<h4>Viña del Mar, Chile.</h4>
-							</MotionLink>
+						</Link>
 
-							<MotionLink variants={zoomIn}
-								className="link item-div-datos"
-								href="/mi-cv.pdf"
-								target="_blank"
-								download="Moisés_Berdichevsky_Fullstack_Developer_CV.pdf"
-
-							>
-							<motion.div variants={zoomIn} style={{ display: "flex", gap: "1rem" }}>
-							<IoMdDownload  className="svg-contacto" />
-							</motion.div>
+						<Link
+							className="link item-div-datos"
+							href="/mi-cv.pdf"
+							target="_blank"
+							download="Moisés_Berdichevsky_Fullstack_Developer_CV.pdf"
+						>
+							<div style={{ display: "flex", gap: "1rem" }}>
+								<IoMdDownload className="svg-contacto" />
+							</div>
 							<h4>Descargar CV Versión PDF.</h4>
-							</MotionLink>
+						</Link>
 					</motion.div>
-				</section>
+				</motion.section>
 			</main>
 		</motion.main>
 	);

@@ -35,11 +35,11 @@ function AboutComp() {
 						className="left-side"
 						childClassName="left-content"
 						direction="left"
-						duration={1500}
+						duration={1000}
 					>
 						<div>
 							<div className="edad-titulo">
-								<p>Desarrollador JavaScript Autodidacta (FullStack)</p>
+								<p>Desarrollador Web FullStack (JavaScript)</p>
 								<p>Ingeniero Agrónomo Universidad Santo Tomás</p>
 								<p>Abierto a especialización según puesto</p>
 							</div>
@@ -57,7 +57,7 @@ function AboutComp() {
 					<Zoom
 						className="center-side"
 						childClassName="center-content"
-						duration={1500}
+						duration={1000}
 					>
 						<div>
 							<div className="imgs">
@@ -93,14 +93,14 @@ function AboutComp() {
 							<h3>Trayectoria</h3>
 							<p>
 								Desde que decidí convertirme en desarrollador web, escogí
-								construir pequeños proyectos como método de interiorización de
+								construir proyectos como método de interiorización de
 								conocimientos. Esto me ha permitido aprender de mis errores,
 								lidiar con bugs y ganar experiencia como desarrollador.
 							</p>
 							<p>
 								A la fecha he contruído más de 14 proyectos, pero he decidido
-								exponer sólo los tres más importantes, ya que estos destacan mi
-								capacidad para comunicarme con clientes, satisfacer necesidades
+								exponer sólo los tres más importantes, ya que estos destacan mis habilidades actuales como desarrollador,
+								mi capacidad para comunicarme con clientes, satisfacer necesidades
 								reales, atendiendo aspectos de diseño, funcionalidad y
 								usabilidad.
 							</p>
@@ -111,7 +111,7 @@ function AboutComp() {
 						direction="right"
 						className="right-side"
 						childClassName="right-content"
-						duration={1500}
+						duration={1000}
 					>
 						<div>
 							<div className="imgs">
@@ -171,7 +171,7 @@ function AboutComp() {
 				>
 					<motion.h4 variants={fadeInWithGlow}>
 						Si deseas saber más sobre lo que sé hacer, te invito a ver mis{" "}
-						<span className="link" onClick={goToProyectos}>
+						<span className="link" style={{ fontWeight:"600" }} onClick={goToProyectos}>
 							proyectos.
 						</span>
 					</motion.h4>
@@ -184,7 +184,7 @@ function AboutComp() {
 				>
 					<motion.h4 variants={fadeInWithGlow}>
 						Hay más de una manera de encontrarme.{" "}
-						<span className="link" onClick={goToContacto}>
+						<span className="link" style={{ fontWeight:"600" }} onClick={goToContacto}>
 							¡Mantengamos el contacto!
 						</span>
 						.
@@ -199,7 +199,7 @@ function AboutComp() {
 					<motion.h4 variants={fadeInWithGlow}>
 						Si te ha interesado mi perfil, también puedes descargar mi CV
 						completo{" "}
-						<span>
+						<span style={{ fontWeight:"600" }}>
 							<Link href="/mi-cv.pdf" download="Moisés_Berdichevsky_Fullstack_Developer_CV.pdf" target="_blank" className="link">aquí.</Link>
 						</span>
 					</motion.h4>

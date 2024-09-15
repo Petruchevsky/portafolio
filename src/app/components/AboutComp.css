@@ -184,7 +184,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 4rem;
+  padding: 2.6rem;
   border-image: linear-gradient(0deg, var(--white), var(--black), var(--black)) 1 / 2px;
 }
 
@@ -259,7 +259,7 @@
   }
   
   .more-about-me {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -285,6 +285,7 @@
   
   .left-side {
     width: 100%;
+    border-bottom: solid 2px white;
   }
   
   .left-content {
@@ -314,6 +315,8 @@
   
   .center-side {
     width: 100%;
+    border-top: none;
+    border-bottom: solid 2px white;
   }
   
   .center-content {
@@ -324,6 +327,7 @@
   
   .right-side {
     width: 100%;
+    border-top: none;
   }
   
   .right-content {
@@ -357,7 +361,7 @@
   }
   
   .more-about-me {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -383,6 +387,7 @@
   
   .left-side {
     width: 100%;
+    border-bottom: solid 2px white;
   }
   
   .left-content {
@@ -411,6 +416,8 @@
   
   .center-side {
     width: 100%;
+    border-top: none;
+    border-bottom: solid 2px white;
   }
   
   .center-content {
@@ -421,6 +428,7 @@
   
   .right-side {
     width: 100%;
+    border-top: none;
   }
   
   .right-content {
@@ -454,7 +462,7 @@
   }
   
   .more-about-me {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -480,12 +488,13 @@
   
   .left-side {
     width: 100%;
+    border-bottom: solid 2px white;
   }
   
   .left-content {
     padding-top: 0;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     gap: 0;
   }
@@ -495,11 +504,11 @@
     padding: 2rem;
     gap: 3rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .edad-titulo > p {
-    text-align: center;
+    text-align: left;
     line-height: 2rem;
     font-size: 1.7rem;
   }
@@ -511,6 +520,8 @@
   
   .center-side {
     width: 100%;
+    border-top: none;
+    border-bottom: solid 2px white;
   }
   
   .center-content {
@@ -521,6 +532,7 @@
   
   .right-side {
     width: 100%;
+    border-top: none;
   }
   
   .right-content {
@@ -559,7 +571,7 @@
   }
   
   .more-about-me {
-    padding: 1rem;
+    padding: .7rem;
   }
   
 }

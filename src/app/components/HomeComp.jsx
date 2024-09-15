@@ -35,14 +35,17 @@ function HomeComp() {
 					<div className="title-div-banner-about">
 						<Slide  direction="right" cascade damping={0.3}>
 							<h1>
-								<strong>Bienvenidos</strong> a mi <strong>Portafolio</strong>
+								Bienvenidos a mi <strong>Portafolio</strong>
 							</h1>
 							<h2>
 								<strong>Moisés</strong> Elías <strong>Berdichevsky</strong>{" "}
 								Argandoña
 							</h2>
 							<h2>
-								Desarrollador Web <strong>JavaScript Jr.</strong> (FullStack)
+								Desarrollador Web Junior
+							</h2>
+							<h2>
+								<strong>JavaScript Jr.</strong> (FullStack)
 							</h2>
 						</Slide>
 					</div>

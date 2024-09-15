@@ -19,7 +19,7 @@ function TypedWithBack({ strings }) {
         typeSpeed: 20,
         backSpeed: 20,
         loop: true,
-        cursorChar: "_",
+        cursorChar: "»",
         startDelay: 5000,
         backDelay: 1000,
       });

@@ -28,6 +28,7 @@ function SelectedProjectGrupo7({ toggleSelectedProject }) {
             whileInView="show"
             viewport={1}
             exit="exit"
+            layout
          >
             <motion.div
                className="selected-project-title-container"
@@ -40,10 +41,9 @@ function SelectedProjectGrupo7({ toggleSelectedProject }) {
                variants={slideFromLeft}
                className="selected-project-description"
             >
-               Grupo 7 es una tienda electrónica de productos de limpieza. La página web fue diseñada con un estilo minimalista, colores suaves y carente de animaciones para transmitir tranquilidad y confianza. La página web incluye información sobre la empresa, sus productos, un formulario de contacto, agenda de eventos y más.
-               con una paleta de colores claros y azulados, mezclado con un diseño moderno.
+               Grupo 7 es una tienda electrónica de productos de limpieza. La página web fue diseñada con un estilo moderno minimalista, colores  suaves y animaciones modernas y fluidas. La página web incluye información sobre la empresa, sus productos, un formulario de contacto y más.
                La autoadministración de este sitio permite cambiar textos, imagenes de cada ruta creada.
-               Y el CSS fue hecho a la medida de las necesidades del cliente.
+               Además el CSS fue hecho a la medida de las necesidades del cliente.
             </motion.p>
 
             <motion.div variants={zoomIn} className="selected-project-items">
@@ -53,7 +53,7 @@ function SelectedProjectGrupo7({ toggleSelectedProject }) {
                   onClick={() => toggleSelectedProject(null)}
                   whileHover={hover}>
                   <motion.div variants={fadeInRotate}>
-                     <IoArrowBackCircle className="animated-icon" />
+                     <IoArrowBackCircle className="selected-project-icon" />
                   </motion.div>
                   <motion.p variants={zoomIn}>Volver</motion.p>
                </motion.div>
@@ -63,7 +63,7 @@ function SelectedProjectGrupo7({ toggleSelectedProject }) {
                   variants={slideFromLeft}
                   whileHover={hover}>
                   <motion.div variants={fadeInRotate}>
-                     <GrGithub className="animated-icon" />
+                     <GrGithub className="selected-project-icon" />
                   </motion.div>
                   <motion.p variants={zoomIn}>Github</motion.p>
                </MotionLink>
@@ -73,7 +73,7 @@ function SelectedProjectGrupo7({ toggleSelectedProject }) {
                   variants={slideFromLeft}
                   whileHover={hover}>
                   <motion.div variants={fadeInRotate}>
-                     <BsFiletypeMd className="animated-icon" />
+                     <BsFiletypeMd className="selected-project-icon" />
                   </motion.div>
                   <motion.p variants={zoomIn}>ReadMe</motion.p>
                </MotionLink>
@@ -83,7 +83,7 @@ function SelectedProjectGrupo7({ toggleSelectedProject }) {
                   variants={slideFromLeft}
                   whileHover={hover}>
                   <motion.div variants={fadeInRotate}>
-                     <TbWorldWww className="animated-icon" />
+                     <TbWorldWww className="selected-project-icon" />
                   </motion.div>
                   <motion.p variants={zoomIn}>Website</motion.p>
                </MotionLink>
