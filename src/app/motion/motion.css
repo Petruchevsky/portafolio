@@ -1,0 +1,86 @@
+.mc {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 5rem;
+  gap: 10rem;
+}
+
+.padre {
+  width: 1600px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  background-color: rgb(91, 150, 238);
+  border-radius: 30px;
+}
+
+.padre2 {
+  padding: 10rem;
+  margin-bottom: 10rem;
+  width: 1600px;
+  height: 3600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  background-color: blueviolet;
+  border-radius: 30px;
+}
+
+.hijo {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border-radius: 20px;
+
+}
+
+.hijo2 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hijo3 {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(7, 130, 161);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hijo4 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(1, 31, 38);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hijoFlex {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.btn-cont {
+  width: 30%;
+}

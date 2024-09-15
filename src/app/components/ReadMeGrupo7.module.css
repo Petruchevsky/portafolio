@@ -1,0 +1,437 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.main-container-readme {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 5rem 0;
+   margin-top: 5rem;
+	gap: 5rem;
+   position: relative;
+	animation: pastel-box-shadow 5s infinite alternate both;
+}
+.main-container-readme > video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: brightness(1);
+}
+
+.content-readme {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.content-readme h1, .content-readme h2 {
+	width: 100%;
+	color: white;
+	background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.5) 10% 90%, transparent 100%);
+	padding: 2rem 6rem;
+	text-align: center;
+   border-bottom: solid 2px white;
+}
+
+.content-readme h3 {
+	color: rgb(0, 221, 255);
+	border-radius: 200px;
+	text-decoration: none;
+}
+
+.content-readme p {
+	color: rgb(197, 247, 255);
+	text-align: center;
+	
+}
+
+.content-readme img {
+	width: 25rem;
+	height: 25rem;
+	margin: 0.5rem 0;
+	filter: drop-shadow(0px 0px 20px white);
+}
+
+.div-credentials {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding-bottom: 3rem;
+	background: rgba(0,0,0,0.3);
+   backdrop-filter: blur(20px);
+	border-radius: 20px;
+	border: solid 2px white;
+}
+
+.div-credentials h4 {
+	padding-top: 1rem;
+}
+
+.div-readme {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding-bottom: 3rem;
+	width: 40%;
+	background: rgba(0,0,0,0.3);
+   backdrop-filter: blur(20px);
+	border-radius: 20px;
+	border: solid 2px white;
+}
+
+.div-transparent-readme {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4rem;
+	width: 40%;
+   backdrop-filter: blur(20px);
+	background: rgba(0,0,0,0.1);
+   border-radius: 20px;
+   padding-bottom: 4rem;
+   border: solid 2px white;
+}
+
+.text-flex-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 4rem;
+}
+
+.link-readme {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+
+.div4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding-bottom: 3rem;
+	width: 40%;
+	background: rgba(0,0,0,0.4);
+   backdrop-filter: blur(10px);
+	border-radius: 20px;
+   border: solid 2px white;
+}
+
+.div4 h4 {
+	font-weight: 500;
+	margin-bottom: 1rem;
+	color: rgb(0, 221, 255);
+}
+
+.div4 img {
+	width: 20rem;
+	height:20rem;
+	filter: drop-shadow(0px 0px 20px white);
+}
+
+.div-back-btn {
+	width: 20rem;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 4rem;
+	border-radius: 30px;
+	background: rgba(95, 234, 255, 0.1); 
+	text-decoration: none;
+	border: solid 2px white;
+}
+
+.back-btn {
+	width: 9rem;
+	color: rgb(0, 221, 255);
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+	.content-readme img {
+		width: 20rem;
+		height: 20rem;
+	}
+
+	.div-transparent-readme {
+		gap: 4.5rem;
+	}
+	
+	.div-readme {
+		gap: 1rem;
+	}
+
+	.text-flex-div {
+		padding: 1rem 3rem;
+	}
+
+	.div4 {
+		gap: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.div4 img {
+		width: 15rem;
+		height:15rem;
+	}
+
+	.link-readme {
+		gap: 0;
+	}
+
+	.div-back-btn {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.back-btn {
+		width: 7rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.main-container-readme {
+		padding: 2rem;
+		gap: 2rem;
+	}
+	
+	.content-readme {
+		width: 100%;
+		justify-content: space-evenly;
+	}
+
+	.content-readme img {
+		width: 19.5rem;
+		height: 19.5rem;
+	}
+
+	.content-readme h1, .content-readme h2 {
+		padding: 2rem;
+	}
+
+	.div-transparent-readme {
+		gap: 5rem;
+		width: 49%;
+	}
+
+	.div-readme {
+		width: 49%;
+	}
+
+	.div-credentials {
+		width: 98.5%;
+	}
+
+	.text-flex-div {
+		padding: 1rem 3rem;
+	}
+
+	.div4 {
+		width: 49%;
+		gap: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.div4 img {
+		width: 15rem;
+		height:15rem;
+	}
+
+	.link-readme {
+		gap: 0;
+	}
+
+	.div-back-btn {
+		width: 13rem;
+		height: 13rem;
+	}
+
+	.back-btn {
+		width: 6rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.main-container-readme {
+		padding: 2rem;
+		gap: 2rem;
+	}
+	
+	.content-readme {
+		width: 100%;
+	}
+
+	.content-readme img {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.content-readme h1, .content-readme h2 {
+		padding: 2rem;
+	}
+
+	.div-transparent-readme {
+		gap: 4.6rem;
+		width: 49%;
+	}
+
+	.div-transparent-readme h3 {
+		padding: 0 2rem;
+	}
+
+	.div-readme {
+		width: 49%;
+	}
+
+	.div-credentials {
+		width: 98.5%;
+	}
+
+	.text-flex-div {
+		padding: 0.5rem 1.5rem;
+	}
+
+	.div4 {
+		width: 49%;
+		gap: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.div4 img {
+		width: 12rem;
+		height:12rem;
+	}
+
+	.div4 h4 {
+		margin-bottom: 1rem;
+	}
+
+	.div-back-btn {
+		width: 11rem;
+		height: 11rem;
+	}
+
+	.back-btn {
+		width: 5rem;
+	}
+
+	.link-readme {
+		gap: 0;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	.main-container-readme {
+		padding: 0.5rem 0.5rem;
+		justify-content: flex-start;
+		gap: 0.5rem;
+		padding-bottom: 1rem;
+	}
+
+	.content-readme {
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 0.5rem;
+		width: 100%;
+		padding: 0;
+	}
+	
+	.content-readme img {
+		width: 12rem;
+		height: 12rem;
+	}
+
+	.content-readme h1, .content-readme h2 {
+		padding: 2rem;
+	}
+	
+	.div-readme {
+		width: 100%;
+		justify-content: flex-start;
+		margin-bottom: 0rem;
+	}
+
+	.div-credentials {
+		width: 98.5%;
+	}
+	
+	.div-transparent-readme {
+		width: 100%;
+		gap: 2rem;
+		padding-top: 0;
+		justify-content: flex-start;
+	}
+
+	.div-transparent-readme h3 {
+		padding: 0 2rem;
+	}
+
+	.text-flex-div {
+		padding: 0.5rem 1rem;
+	}
+
+	.div4 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding-bottom: 1rem;
+		background: rgba(0,0,0,0.05);
+		border-radius: 20px;
+	}
+
+	.div4 img {
+		width: 10rem;
+		height:10rem;
+	}
+
+	.div-back-btn {
+		margin: 1rem 0;
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.back-btn {
+		width: 5rem;
+	}
+
+	.div4 h4 {
+		margin-bottom: 0.5rem;
+	}
+
+	.link-readme {
+		gap: 0;
+	}
+}

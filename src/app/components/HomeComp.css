@@ -1,0 +1,329 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.banner-about {
+	background-image: url("https://res.cloudinary.com/dkkvoyfqz/image/upload/v1719436857/dark-bg_hpw85d.jpg");
+	background-position: center;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0rem;
+	position: relative;
+	padding: 2rem 0 7rem 0;
+}
+
+.banner-about::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to bottom, transparent 80%, black);
+}
+
+.title-and-logo-banner-about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	width: 100%;
+	height: auto;
+}
+
+.logo-banner-about {
+	width: 30rem;
+	height: auto;
+}
+
+.title-div-banner-about {
+	display: flex;
+	height: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.intro-container-about {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.intro-about {
+	color: var(--lightgray);
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 10px;
+	padding: 3rem 4rem;
+	margin: 2rem 0;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: inset 0px 0px 20px 5px var(--gray);
+}
+
+.mi-stack-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	padding: 6rem 0;
+	margin-bottom: 2rem;
+}
+
+.mi-stack-h2 {
+	display: flex;
+	align-items: center;
+	width: 53rem;
+	height: 7rem;
+	text-align: left;
+}
+
+.icons-div-stack {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.individual-icon-div-stack {
+	width: 14rem;
+	height: 13rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+	.logo-banner-about {
+		width: 22rem;
+	}
+
+	.mi-stack-container {
+		gap: 4rem;
+		padding: 3rem 0;
+		margin-bottom: 2rem;
+	}
+
+	.mi-stack-h2 {
+		width: 36rem;
+		height: 5rem;
+		text-align: left;
+	}
+
+	.icons-div-stack {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.individual-icon-div-stack {
+		width: 10rem;
+		height: 12rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.banner-about {
+		gap: 0rem;
+		padding: 2rem 0 4rem 0;
+	}
+
+	.title-and-logo-banner-about {
+		gap: 1rem;
+	}
+
+	.logo-banner-about {
+		width: 20rem;
+	}
+
+	.title-div-banner-about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		text-align: center;
+	}
+
+	.intro-about {
+		width: 90%;
+		border-radius: 5px;
+		padding: 2rem;
+	}
+
+	.mi-stack-container {
+		gap: 3rem;
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	.mi-stack-h2 {
+		width: 32rem;
+		height: 6rem;
+		text-align: left;
+	}
+
+	.icons-div-stack {
+		width: 90%;
+		justify-content: space-between;
+	}
+
+	.individual-icon-div-stack {
+		width: 8rem;
+		height: 12rem;
+		gap: 0;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.banner-about {
+		gap: 0rem;
+		padding: 0rem 0 4rem 0;
+	}
+
+	.title-and-logo-banner-about {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 0rem;
+		width: 90%;
+		height: auto;
+		padding-top: 2rem;
+	}
+
+	.logo-banner-about {
+		width: 16rem;
+		padding: 0;
+		margin: 0;
+	}
+
+	.title-div-banner-about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		text-align: center;
+	}
+
+	.intro-about {
+		width: 90%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border-radius: 5px;
+		padding: 2rem;
+	}
+
+	.mi-stack-container {
+		gap: 1rem;
+		padding: 0 0 2rem 0;
+		margin-bottom: 1rem;
+	}
+
+	.mi-stack-h2 {
+		width: 28rem;
+		height: 6rem;
+		text-align: left;
+	}
+
+	.icons-div-stack {
+		width: 90%;
+		justify-content: space-between;
+	}
+
+	.individual-icon-div-stack {
+		width: 14rem;
+		height: 8rem;
+		gap: 0;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	.banner-about {
+		gap: 0rem;
+		padding: 2rem 0rem 4rem 0rem;
+	}
+
+	.title-and-logo-banner-about {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: auto;
+		flex-direction: column-reverse;
+		gap: 1rem;
+	}
+
+	.logo-banner-about {
+		width: 20rem;
+		padding: 0;
+		margin: 0;
+	}
+
+	.title-div-banner-about {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		text-align: center;
+	}
+
+	.intro-about {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: justify;
+		border-radius: 0px;
+		padding: 1rem;
+		box-shadow: 0 0 20px 5px var(--white);
+		margin-bottom: 0;
+	}
+
+	.mi-stack-container {
+		gap: 3rem;
+		padding: 0 0 0rem 0;
+		margin-bottom: 1rem;
+	}
+
+	.mi-stack-h2 {
+		width: 25rem;
+		height: 2rem;
+		text-align: left;
+	}
+
+	.icons-div-stack {
+		width: 95%;
+		justify-content: space-between;
+	}
+
+	.individual-icon-div-stack {
+		width: 9rem;
+		height: 8rem;
+		gap: 0;
+	}
+}

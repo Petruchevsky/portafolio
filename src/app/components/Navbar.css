@@ -1,0 +1,80 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+nav {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+  gap: 3rem;
+  z-index: 10;
+}
+
+.nav-item-div {
+  width:35%;
+}
+
+.reveal-box {
+  width: 100%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	nav {
+		width: 90%;
+    gap: 2rem;
+	}
+
+  .nav-item-div {
+    width:35%;
+  }
+  
+  .reveal-box {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	nav {
+		width: 90%;
+    gap: .5rem;
+	}
+
+  .nav-item-div {
+    width:35%;
+  }
+  
+  .reveal-box {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	nav {
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-item-div {
+    width:100%;
+  }
+  
+  .reveal-box {
+    width: 100%;
+  }
+}

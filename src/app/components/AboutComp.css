@@ -1,0 +1,565 @@
+/* Animaciones */
+@keyframes movingSpace {
+  0% {
+    background-position: 0% 0%;
+}
+20% {
+    background-position: 10% 10%;
+}
+40% {
+    background-position: 20% 20%;
+}
+60% {
+    background-position: 100% 100%;
+}
+80% {
+    background-position: 20% 20%;
+}
+100% {
+    background-position: 0% 0%;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.main-container-about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars-container {
+  width: 100%;
+  height: 85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.stars-container::before {
+  content: "";
+  position: absolute;
+  background-image: url("https://res.cloudinary.com/dkkvoyfqz/image/upload/v1721421638/space_zymohe.jpg");
+  background-position: center;
+  background-size: cover;
+  animation: movingSpace 60s ease-in-out infinite;
+  filter: brightness(0.5);
+  width: 100%;
+  height: 85rem;
+  z-index: -1;
+}
+
+.header-container-about {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-container-about {
+  width: 100%;
+  padding: 0rem 0 3rem 0;
+}
+
+.left-side {
+  background: rgba(0, 0, 0, 0.3);
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  border-top: solid 2px white;
+}
+
+.left-content {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.edad-titulo {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0rem 0 0;
+  width: 100%;
+}
+
+.edad-titulo > p {
+  font-size: 2.8rem;
+  color: var(--white);
+}
+
+.img-me {
+  width: 100%;
+  padding: 0 3rem 0 0;
+  height: auto;
+  filter: saturate(0.7) contrast(1.3);
+}
+
+.center-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: solid 2px white;
+}
+
+.center-content {
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.right-side {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: solid 2px white;
+}
+
+.right-content {
+  padding: 3rem 3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.imgs > img {
+  width: 24%;
+  height: 100%;
+  transition: transform 300ms;
+}
+
+.imgs > img:hover {
+  cursor: pointer;
+  transform: scale(3);
+}
+
+.more-about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.more-about-me {
+  width: auto;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 4rem;
+  border-image: linear-gradient(0deg, var(--white), var(--black), var(--black)) 1 / 2px;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+  .stars-container {
+    height: 64rem;
+  }
+  
+  .stars-container::before {
+    height: 64rem;
+  }
+  
+  .header-container-about {
+    padding: 1rem 0;
+  }
+  
+  .navbar-container-about {
+    padding: 0rem 0 2.5rem 0;
+  }
+  
+  .left-side {
+    width: 20%;
+  }
+  
+  .left-content {
+    padding-top: 5rem;
+    justify-content: space-between;
+  }
+  
+  .edad-titulo {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+  }
+
+  .edad-titulo > p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+  }
+  
+  .img-me {
+    padding: 3rem 2rem 0 0;
+  }
+  
+  .center-side {
+    width: 37%;
+  }
+  
+  .center-content {
+    padding: 2rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .right-side {
+    width: 37%;
+  }
+  
+  .right-content {
+    padding: 2rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .more-about-me-section {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .more-about-me {
+    padding: 2rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.stars-container {
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .stars-container::before {
+    height: 100%;
+  }
+  
+  .header-container-about {
+    padding: 1rem 0;
+  }
+  
+  .navbar-container-about {
+    padding: 0rem 0 2.5rem 0;
+  }
+  
+  .left-side {
+    width: 100%;
+  }
+  
+  .left-content {
+    padding-top: 2rem;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+  
+  .edad-titulo {
+    width: 100%;
+    padding: 3rem 4rem 4rem 4rem;
+    gap: 7rem;
+    align-items: flex-start;
+  }
+
+  .edad-titulo > p {
+    text-align: left;
+    line-height: 2.5rem;
+    font-size: 2.1rem;
+  }
+  
+  .img-me {
+    width: 40%;
+    padding: 0;
+  }
+  
+  .center-side {
+    width: 100%;
+  }
+  
+  .center-content {
+    padding: 2rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .right-side {
+    width: 100%;
+  }
+  
+  .right-content {
+    padding: 2rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .imgs > img {
+    width: 24.5%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    transition: none;
+  }
+
+  .imgs > img:hover {
+    pointer-events: none;
+    transform: none;
+  }
+
+  .more-about-me-section {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .more-about-me {
+    padding: 2rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.stars-container {
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .stars-container::before {
+    height: 100%;
+  }
+  
+  .header-container-about {
+    padding: 0 7rem;
+  }
+  
+  .navbar-container-about {
+    padding: 0rem 0 2.5rem 0;
+  }
+  
+  .left-side {
+    width: 100%;
+  }
+  
+  .left-content {
+    padding-top: 2rem;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+  
+  .edad-titulo {
+    width: 60%;
+    padding: 0rem 3rem 2rem 2rem;
+    gap: 4rem;
+    align-items: flex-start;
+  }
+
+  .edad-titulo > p {
+    text-align: left;
+    line-height: 2.5rem;
+    font-size: 1.9rem;
+  }
+  
+  .img-me {
+    width: 40%;
+    padding: 0;
+  }
+  
+  .center-side {
+    width: 100%;
+  }
+  
+  .center-content {
+    padding: 2rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .right-side {
+    width: 100%;
+  }
+  
+  .right-content {
+    padding: 2rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .imgs > img {
+    width: 24.5%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    transition: none;
+  }
+
+  .imgs > img:hover {
+    pointer-events: none;
+    transform: none;
+  }
+
+  .more-about-me-section {
+    padding: 1rem;
+    gap: .5rem;
+  }
+  
+  .more-about-me {
+    padding: 2rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+  .stars-container {
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .stars-container::before {
+    height: 100%;
+  }
+  
+  .header-container-about {
+    padding: 1rem;
+  }
+  
+  .navbar-container-about {
+    padding: 0rem 0 2.5rem 0;
+  }
+  
+  .left-side {
+    width: 100%;
+  }
+  
+  .left-content {
+    padding-top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .edad-titulo {
+    width: 100%;
+    padding: 2rem;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .edad-titulo > p {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.7rem;
+  }
+  
+  .img-me {
+    width: 70%;
+    padding: 0;
+  }
+  
+  .center-side {
+    width: 100%;
+  }
+  
+  .center-content {
+    padding: 2rem 1rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .right-side {
+    width: 100%;
+  }
+  
+  .right-content {
+    padding: 2rem 1rem;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  
+  .imgs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .imgs > img {
+    width: 48%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    transition: none;
+    box-shadow: 0 0 5px 1px white;
+    border-radius: 5px;
+  }
+
+  .imgs > img:hover {
+    pointer-events: none;
+    transform: none;
+  }
+
+  .more-about-me-section {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .more-about-me {
+    padding: 1rem;
+  }
+  
+}

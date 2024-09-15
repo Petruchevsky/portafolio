@@ -1,0 +1,334 @@
+h1 {
+	font-weight: 500;
+	font-size: 6.4rem;
+	text-align: center;
+	color: var(--white);
+	margin: 0;
+	padding: 0;
+}
+
+.h1-glass {
+	color: var(--lightgray);
+	font-size: 9rem;
+	font-weight: 100;
+	padding: 1rem 4rem;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 10px;
+	box-shadow: 0 0 15px 3px var(--black);
+}
+
+h2 {
+	font-size: 4.5rem;
+	color: var(--white);
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-size: 3.5rem;
+	font-weight: 400;
+	color: var(--white);
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 2.7rem;
+	font-weight: 200;
+	color: var(--white);
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 2.4rem;
+	font-weight: 300;
+	color: var(--lightgray);
+	text-align: justify;
+	line-height: 5rem;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+svg {
+	color: var(--white);
+	width: 3rem;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.animated-icon {
+	width: 7rem;
+	height: auto;
+	color: var(--white);
+	fill: var(--white);
+}
+
+.green-msg {
+	color: var(--green);
+	font-size: 1.8rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+	h1 {
+		font-size: 4rem;
+		text-align: center;
+		color: var(--white);
+		margin: 0;
+		padding: 0;
+	}
+
+	.h1-glass {
+		font-size: 6rem;
+		padding: 1rem 3rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+		color: var(--white);
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+
+	}
+
+	h3 {
+		font-size: 2.7rem;
+		color: var(--white);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	h4 {
+		font-size: 2.1rem;
+		color: var(--white);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		font-size: 1.8rem;
+		color: var(--whitesmoke);
+		text-align: justify;
+		margin: 0;
+		padding: 0;
+		line-height: 4rem;
+	}
+
+	svg {
+		width: 2.5rem;
+	}
+
+	.animated-icon {
+		width: 5rem;
+	}
+
+	.green-msg {
+		color: var(--green);
+		font-size: 1.3rem;
+		line-height: 2rem;
+	}
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	h1 {
+		font-size: 3.5rem;
+		text-align: center;
+		color: var(--white);
+		margin: 0;
+		padding: 0;
+	}
+
+	.h1-glass {
+		font-size: 5rem;
+		padding: 1rem 2rem;
+	}
+
+	h2 {
+		font-size: 2.7rem;
+		color: var(--white);
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+	}
+
+	h3 {
+		font-size: 2.4rem;
+		color: var(--white);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	h4 {
+		font-size: 1.9rem;
+	}
+
+	p {
+		font-size: 1.6rem;
+		color: var(--whitesmoke);
+		text-align: justify;
+		margin: 0;
+		padding: 0;
+		line-height: 4rem;
+	}
+
+	svg {
+		width: 1.8rem;
+	}
+
+	.animated-icon {
+		width: 4rem;
+	}
+
+	.green-msg {
+		color: var(--green);
+		font-size: 1.2rem;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 2rem;
+	}
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		color: var(--white);
+		margin: 0;
+		padding: 0;
+	}
+
+	.h1-glass {
+		font-size: 4rem;
+		padding: 1rem 2rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+		color: var(--white);
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+	}
+
+	h3 {
+		font-size: 2.1rem;
+		color: var(--white);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	h4 {
+		font-size: 1.7rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+		color: var(--white);
+		text-align: justify;
+		margin: 0;
+		padding: 0;
+		line-height: 3rem;
+	}
+
+	svg {
+		width: 1.7rem;
+	}
+
+	.animated-icon {
+		width: 4rem;
+	}
+
+	.green-msg {
+		color: var(--green);
+		font-size: 1.1rem;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 2rem;
+	}
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	h1 {
+		font-size: 2.7rem;
+		text-align: center;
+		color: var(--white);
+		margin: 0;
+		padding: 0;
+	}
+
+	.h1-glass {
+		font-size: 3rem;
+		padding: 1rem 2rem;
+		font-weight: 200;
+	}
+
+	h2 {
+		font-size: 2.1rem;
+		color: var(--white);
+		font-weight: 600;
+		margin: 0;
+		padding: 0;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+		color: var(--white);
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	h4 {
+		font-size: 1.6rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+		color: var(--whitesmoke);
+		text-align: justify;
+		margin: 0;
+		padding: 0;
+		line-height: 2.5rem;
+	}
+
+	svg {
+		width: 1.4rem;
+	}
+
+	.animated-icon {
+		width: 3rem;
+	}
+
+	.green-msg {
+		color: var(--green);
+		font-size: 1.4rem;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 2rem;
+	}
+}

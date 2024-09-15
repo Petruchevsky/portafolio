@@ -1,0 +1,386 @@
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas 4K*/
+.main-container-readme {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 5rem 0;
+   margin-top: 5rem;
+	gap: 5rem;
+   position: relative;
+	animation: pastel-box-shadow 5s infinite alternate both;
+}
+.main-container-readme > video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: brightness(1);
+}
+
+.content-readme {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.content-readme h1, .content-readme h2 {
+	width: 100%;
+	color: white;
+	background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.5) 10% 90%, transparent 100%);
+	padding: 2rem 6rem;
+	text-align: center;
+   border-bottom: solid 2px rgba(255,255,255,0.3);
+}
+
+.content-readme h3 {
+	color: rgb(236, 185, 0);
+	border-radius: 200px;
+	text-decoration: none;
+}
+
+.content-readme p {
+	color: rgb(197, 197, 197);
+	text-align: center;
+	
+}
+
+.content-readme img {
+	width: 29rem;
+	height: 29rem;
+	margin: 0.5rem 0;;
+}
+
+.div-readme {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding-bottom: 3rem;
+	width: 35%;
+	background: rgba(0,0,0,0.5);
+   backdrop-filter: blur(10px);
+	border-radius: 20px;
+   border: solid 2px rgba(255,255,255,0.3);
+}
+
+.div-transparent-readme {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4rem;
+	width: 35%;
+   backdrop-filter: blur(10px);
+   border-radius: 20px;
+   padding-bottom: 4rem;
+   border: solid 2px rgba(255,255,255,0.3);
+}
+
+.text-flex-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 4rem;
+}
+
+.link-readme {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.div-back-btn {
+	width: 20rem;
+   height: 20rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem 4rem;
+	margin-top: 2rem;
+   border-radius: 30px;
+   background: rgba(0,0,0,0.5); 
+   text-decoration: none;
+   border: solid 2px rgba(255,255,255,0.3);
+}
+
+.div4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding-bottom: 3rem;
+	width: 35%;
+	background: rgba(0,0,0,0.5);
+   backdrop-filter: blur(10px);
+	border-radius: 20px;
+   border: solid 2px rgba(255,255,255,0.3);
+}
+
+.div4 h4 {
+	color: rgb(236, 185, 0);
+	font-weight: 600;
+	margin: 2rem 0;
+}
+
+.div4 img {
+	width: 20rem;
+	height:20rem;
+}
+
+.back-btn {
+	width: 9rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+	.content-readme img {
+		width: 21rem;
+		height: 21rem;
+	}
+
+	.div-transparent-readme {
+		width: 45%;
+		gap: 3.5rem;
+	}
+	
+	.div-readme {
+		width: 45%;
+		gap: 1rem;
+	}
+
+	.text-flex-div {
+		padding: 1rem 3rem;
+	}
+
+	.div4 {
+		width: 45%;
+	}
+
+	.div4 img {
+		width: 15rem;
+		height:15rem;
+	}
+
+	.div4 h4 {
+		margin: 1rem 0;
+	}
+
+	.div-back-btn {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.back-btn {
+		width: 7rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.main-container-readme {
+		padding: 1rem;
+		gap: 1rem;
+	}
+	
+	.content-readme {
+		width: 100%;
+		justify-content: space-evenly;
+	}
+
+	.content-readme img {
+		width: 20.4rem;
+		height: 20.4rem;
+	}
+
+	.content-readme h1, .content-readme h2 {
+		padding: 2rem;
+	}
+
+	.div-transparent-readme {
+		width: 49%;
+		gap: 6rem;
+	}
+
+	.div-readme {
+		width: 49%;
+	}
+
+	.text-flex-div {
+		padding: 1rem 3rem;
+	}
+
+	.div4 {
+		width: 49%;
+	}
+
+	.div4 img {
+		width: 15rem;
+		height:15rem;
+	}
+
+	.div4 h4 {
+		margin: 1rem 0;
+	}
+
+	.div-back-btn {
+		width: 13rem;
+		height: 13rem;
+	}
+
+	.back-btn {
+		width: 6rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	.main-container-readme {
+		padding: 2rem;
+		gap: 1rem;
+	}
+	
+	.content-readme {
+		width: 100%;
+	}
+
+	.content-readme img {
+		width: 18rem;
+		height: 18rem;
+	}
+
+	.content-readme h1, .content-readme h2 {
+		padding: 2rem;
+	}
+
+	.div-transparent-readme {
+		width: 49%;
+		gap: 4.5rem;
+	}
+
+	.div-readme {
+		width: 49%;
+	}
+
+	.text-flex-div {
+		padding: 0.5rem 2rem;
+	}
+
+	.div4 {
+		width: 49%;
+	}
+
+	.div4 img {
+		width: 12rem;
+		height:12rem;
+	}
+
+	.div4 h4 {
+		margin: 1rem;
+	}
+
+	.div-back-btn {
+		width: 11rem;
+		height: 11rem;
+	}
+
+	.back-btn {
+		width: 5rem;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	.main-container-readme {
+		padding: 0.5rem 0.5rem;
+		justify-content: flex-start;
+		gap: 0.5rem;
+		padding-bottom: 1rem;
+	}
+
+	.content-readme {
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 0.5rem;
+		width: 100%;
+		padding: 0;
+	}
+	
+	.content-readme img {
+		width: 30%;
+		height: 30%;
+	}
+
+	.content-readme h1, .content-readme h2 {
+		padding: 2rem;
+	}
+	
+	.div-readme {
+		width: 100%;
+		justify-content: flex-start;
+		margin-bottom: 0rem;
+	}
+	
+	.div-transparent-readme {
+		width: 100%;
+		gap: 2rem;
+		padding-top: 0;
+		justify-content: flex-start;
+	}
+
+	.text-flex-div {
+		padding: 0.5rem 1rem;
+	}
+
+	.div4 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding-bottom: 1rem;
+		background: rgba(0,0,0,0.05);
+		border-radius: 20px;
+	}
+
+	.div4 img {
+		width: 10rem;
+		height:10rem;
+	}
+
+	.div-back-btn {
+		margin: 1rem 0;
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.back-btn {
+		width: 5rem;
+	}
+
+	.div4 h4 {
+		color: rgb(236, 185, 0);
+		font-weight: 600;
+		margin: 0.5rem;
+	}
+}

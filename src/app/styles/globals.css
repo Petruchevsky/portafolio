@@ -1,0 +1,888 @@
+/* Animaciones */
+@keyframes sombra-btn {
+	0% {
+		box-shadow: 0 0 0px 0px var(--white);
+	}
+	100% {
+		box-shadow: 0 0 20px 10px var(--white);
+	}
+}
+
+@keyframes beat {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes text-shadow {
+	0% {
+		text-shadow: 0 0 0 var(--white);
+	}
+	50% {
+		text-shadow: 0 0 10px var(--white);
+	}
+	100% {
+		text-shadow: 0 0 0 var(--white);
+	}
+}
+
+@keyframes pastel-box-shadow {
+	0% {
+		box-shadow: 0 0 0px 0px var(--white);
+	}
+	20% {
+		box-shadow: 0 0 20px 10px pink;
+	}
+	40% {
+		box-shadow: 0 0 30px 15px lightblue;
+	}
+	60% {
+		box-shadow: 0 0 20px 10px lightgreen;
+	}
+	80% {
+		box-shadow: 0 0 30px 15px rgb(249, 185, 125);
+	}
+	100% {
+		box-shadow: 0 0 20px 10px lightcyan;
+	}
+}
+
+@keyframes transparent-btn {
+	0% {
+		background: linear-gradient(
+			90deg,
+			rgb(251, 255, 0) 0%,
+			rgba(0, 0, 0, 0.1) 0% 100%,
+			rgb(251, 255, 0) 100%
+		);
+		color: white;
+	}
+	100% {
+		background: linear-gradient(
+			90deg,
+			rgb(251, 255, 0) 0%,
+			rgba(0, 0, 0, 0.1) 50% 50%,
+			rgb(251, 255, 0) 100%
+		);
+		color: rgb(26, 26, 96);
+	}
+}
+
+/*-------------------------------------------------------------*/
+
+:root {
+	--white: #ffffff;
+	--whitesmoke: rgb(227, 227, 227);
+	--lightgray: rgb(196, 196, 196);
+	--gray: #808080;
+	--darkgray: #3b3b3b;
+	--black: #000000;
+	--lightgreen: #1eff1e;
+	--green: #0fa30f;
+	--darkgreen: #006300;
+	--darkestgreen: #002e00;
+	--lightred: #ff7979;
+	--red: #c70000;
+	--darkred: #610000;
+	--yellow: #ffe70d;
+	--orange: #e37e11;
+	--lightblue: #c7e1f9;
+	--blue: #2386ff;
+	--darkblue: #1c57b5;
+	--darkestblue: #062d6b;
+	--cyan: #00ffff;
+	--gradient1: radial-gradient(
+			at 89.56% 74.47%,
+			hsla(304.71, 93.87%, 68.04%, 1) 0%,
+			hsla(304.71, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 83.59% 79.42%,
+			hsla(34.9, 93.87%, 68.04%, 1) 0%,
+			hsla(34.9, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 73.43% 54.4%,
+			hsla(125.1, 93.87%, 68.04%, 1) 0%,
+			hsla(125.1, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 65.57% 84.7%,
+			hsla(214.9, 93.87%, 68.04%, 1) 0%,
+			hsla(214.9, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 42.92% 83.77%,
+			hsla(304.71, 93.87%, 68.04%, 1) 0%,
+			hsla(304.71, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 82.15% 34.2%,
+			hsla(34.9, 93.87%, 68.04%, 1) 0%,
+			hsla(34.9, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 79.88% 72.58%,
+			hsla(125.1, 93.87%, 68.04%, 1) 0%,
+			hsla(125.1, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 55.33% 68.39%,
+			hsla(214.9, 93.87%, 68.04%, 1) 0%,
+			hsla(214.9, 93.87%, 68.04%, 0) 100%
+		),
+		radial-gradient(
+			at 1.26% 82.69%,
+			hsla(304.71, 93.87%, 68.04%, 1) 0%,
+			hsla(304.71, 93.87%, 68.04%, 0) 100%
+		);
+	--gradient2: radial-gradient(
+			at 14.16% 11.53%,
+			hsla(321.13, 87.65%, 31.76%, 1) 0%,
+			hsla(321.13, 87.65%, 31.76%, 0) 100%
+		),
+		radial-gradient(
+			at 95.01% 82.18%,
+			hsla(58.04, 100%, 51.96%, 1) 0%,
+			hsla(58.04, 100%, 51.96%, 0) 100%
+		),
+		radial-gradient(
+			at 55.7% 5.6%,
+			hsla(15.06, 100%, 53.92%, 1) 0%,
+			hsla(15.06, 100%, 53.92%, 0) 100%
+		),
+		radial-gradient(
+			at 96.27% 12.75%,
+			hsla(321.13, 87.65%, 31.76%, 1) 0%,
+			hsla(321.13, 87.65%, 31.76%, 0) 100%
+		),
+		radial-gradient(
+			at 38.23% 52.73%,
+			hsla(58.04, 100%, 51.96%, 1) 0%,
+			hsla(58.04, 100%, 51.96%, 0) 100%
+		);
+	--gradient3: radial-gradient(
+			at 87.51% 35.85%,
+			hsla(183.77, 100%, 31.18%, 1) 0%,
+			hsla(183.77, 100%, 31.18%, 0) 100%
+		),
+		radial-gradient(
+			at 90.52% 14.03%,
+			hsla(217.7, 73.27%, 39.61%, 1) 0%,
+			hsla(217.7, 73.27%, 39.61%, 0) 100%
+		),
+		radial-gradient(
+			at 5.32% 79.03%,
+			hsla(245.17, 47.15%, 48.24%, 1) 0%,
+			hsla(245.17, 47.15%, 48.24%, 0) 100%
+		),
+		radial-gradient(
+			at 34.63% 15.17%,
+			hsla(277.3, 73.27%, 39.61%, 1) 0%,
+			hsla(277.3, 73.27%, 39.61%, 0) 100%
+		);
+	--gradient4: radial-gradient(
+			at 16.93% 10.03%,
+			hsla(59, 100%, 52.94%, 1) 0%,
+			hsla(59, 100%, 52.94%, 0) 100%
+		),
+		radial-gradient(
+			at 78.63% 13.44%,
+			hsla(275, 90.27%, 44.31%, 1) 0%,
+			hsla(275, 90.27%, 44.31%, 0) 100%
+		),
+		radial-gradient(
+			at 11.92% 17.24%,
+			hsla(109.95, 83.83%, 46.08%, 1) 0%,
+			hsla(109.95, 83.83%, 46.08%, 0) 100%
+		),
+		radial-gradient(
+			at 3.45% 74.98%,
+			hsla(59, 100%, 52.94%, 1) 0%,
+			hsla(59, 100%, 52.94%, 0) 100%
+		),
+		radial-gradient(
+			at 15.04% 41.31%,
+			hsla(275, 90.27%, 44.31%, 1) 0%,
+			hsla(275, 90.27%, 44.31%, 0) 100%
+		),
+		radial-gradient(
+			at 99.01% 4.32%,
+			hsla(109.95, 83.83%, 46.08%, 1) 0%,
+			hsla(109.95, 83.83%, 46.08%, 0) 100%
+		),
+		radial-gradient(
+			at 12.99% 37.81%,
+			hsla(59, 100%, 52.94%, 1) 0%,
+			hsla(59, 100%, 52.94%, 0) 100%
+		),
+		radial-gradient(
+			at 3.47% 82.99%,
+			hsla(275, 90.27%, 44.31%, 1) 0%,
+			hsla(275, 90.27%, 44.31%, 0) 100%
+		),
+		radial-gradient(
+			at 83.5% 17.1%,
+			hsla(109.95, 83.83%, 46.08%, 1) 0%,
+			hsla(109.95, 83.83%, 46.08%, 0) 100%
+		),
+		radial-gradient(
+			at 65.85% 78.62%,
+			hsla(59, 100%, 52.94%, 1) 0%,
+			hsla(59, 100%, 52.94%, 0) 100%
+		);
+	--gradient5: radial-gradient(
+			at 52.66% 53.54%,
+			hsla(200, 100%, 50%, 1) 0%,
+			hsla(200, 100%, 50%, 0) 100%
+		),
+		radial-gradient(
+			at 14.03% 89.23%,
+			hsla(354.87, 93.43%, 58.24%, 1) 0%,
+			hsla(354.87, 93.43%, 58.24%, 0) 100%
+		),
+		radial-gradient(
+			at 38.21% 73.43%,
+			hsla(200, 100%, 50%, 1) 0%,
+			hsla(200, 100%, 50%, 0) 100%
+		),
+		radial-gradient(
+			at 6.16% 0.59%,
+			hsla(354.87, 93.43%, 58.24%, 1) 0%,
+			hsla(354.87, 93.43%, 58.24%, 0) 100%
+		),
+		radial-gradient(
+			at 6.23% 54.06%,
+			hsla(200, 100%, 50%, 1) 0%,
+			hsla(200, 100%, 50%, 0) 100%
+		),
+		radial-gradient(
+			at 56.32% 88.99%,
+			hsla(354.87, 93.43%, 58.24%, 1) 0%,
+			hsla(354.87, 93.43%, 58.24%, 0) 100%
+		),
+		radial-gradient(
+			at 51.88% 99.4%,
+			hsla(200, 100%, 50%, 1) 0%,
+			hsla(200, 100%, 50%, 0) 100%
+		),
+		radial-gradient(
+			at 49.26% 68.68%,
+			hsla(354.87, 93.43%, 58.24%, 1) 0%,
+			hsla(354.87, 93.43%, 58.24%, 0) 100%
+		),
+		radial-gradient(
+			at 24.56% 68.43%,
+			hsla(200, 100%, 50%, 1) 0%,
+			hsla(200, 100%, 50%, 0) 100%
+		),
+		radial-gradient(
+			at 42.4% 80.49%,
+			hsla(354.87, 93.43%, 58.24%, 1) 0%,
+			hsla(354.87, 93.43%, 58.24%, 0) 100%
+		),
+		radial-gradient(
+			at 12.72% 87.39%,
+			hsla(200, 100%, 50%, 1) 0%,
+			hsla(200, 100%, 50%, 0) 100%
+		),
+		radial-gradient(
+			at 22.88% 25.78%,
+			hsla(354.87, 93.43%, 58.24%, 1) 0%,
+			hsla(354.87, 93.43%, 58.24%, 0) 100%
+		);
+	--gradientYellow: linear-gradient(45deg, #000000, #5c5000, #948800, #ffdd00);
+	--gradientRed: linear-gradient(135deg, #000000, #610000, #ad4500, #ffae00);
+	--gradientGreen: linear-gradient(225deg, #000000, #005c40, #519400, #8cff00);
+	--gradientPurple: linear-gradient(315deg, #000000, #2b007a, #571d90, #b861ff);
+	--gradientPink: linear-gradient(45deg, #000000, #2a1523, #a84786, #ff08ce);
+	--gradientBlue: linear-gradient(135deg, #000000, #00065c, #004c94, #00b3ff);
+	--gradientCyan183: linear-gradient(
+		183deg,
+		#000000,
+		#000000,
+		#001e39,
+		#009b9b
+	);
+	--gradientTranspCyan183: linear-gradient(
+		183deg,
+		transparent,
+		transparent
+		#001e39,
+		#009b9b
+	);
+	--gradientCyan180: linear-gradient(
+		180deg,
+		#000000,
+		#000000,
+		#001e39,
+		#009b9b
+	);
+	--gradientTranspCyan180: linear-gradient(
+		180deg,
+		transparent
+		transparent
+		#001e39,
+		#009b9b
+	);
+	--gradientCyan177: linear-gradient(
+		177deg,
+		#000000,
+		#000000,
+		#001e39,
+		#009b9b
+	);
+	--gradientTranspCyan177: linear-gradient(
+		177deg,
+		transparent,
+		transparent
+		#001e39,
+		#009b9b
+	);
+	--gradientCyan0: linear-gradient(0deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan45: linear-gradient(45deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan90: linear-gradient(90deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan135: linear-gradient(135deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan180: linear-gradient(180deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan225: linear-gradient(225deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan270: linear-gradient(270deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan315: linear-gradient(315deg,#000000,#000000,#001e39,#009b9b);
+	--gradientCyan360: linear-gradient(360deg,#000000,#000000,#001e39,#009b9b);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	min-height: 100vh;
+	width: 100%;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: var(--whitesmoke);
+	background: var(--black);
+}
+
+label {
+	font-size: 2.4rem;
+	color: var(--white);
+	text-align: left;
+	letter-spacing: 0.5px;
+	line-height: 4rem;
+	margin: 0;
+	width: 100%;
+	font-weight: 400;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border-radius: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+	font-size: 2.4rem;
+	text-align: left;
+	padding: 1.2rem 2.5rem;
+	border-image: linear-gradient(180deg, transparent, transparent, var(--white)) 1 / 2px;
+	border-radius: 15px 15px 0 0;
+	transition: all 500ms ease-in-out;
+	margin-bottom: 5rem;
+	width: 100%;
+	color: var(--white);
+	background-color: transparent;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+textarea:hover {
+	cursor: pointer;
+	box-shadow: inset 0 0 10px rgba(255,255,255,1);
+}
+
+textarea {
+	font-size: 2.4rem;
+	text-align: left;
+	margin-bottom: 5rem;
+	margin-top: 3rem;
+	width: 100%;
+	height: 30rem;
+	line-height: 3.5rem;
+	font-family: inherit;
+	padding: 1rem 2rem;
+	border-image: linear-gradient(180deg, transparent, var(--white), var(--white)) 1 / 2px;
+	border-radius: 15px 15px 0 0;
+	transition: all 500ms ease-in-out;
+	margin-bottom: 5rem;
+	width: 100%;
+	color: var(--white);
+	background-color: transparent;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	box-shadow: inset 0 0 10px 2px var(--lightgreen);
+	color: var(--white);
+	outline: none;
+	border: solid 2px var(--green);
+	border-image: linear-gradient(180deg, transparent, transparent, var(--cyan)) 1 / 5px;
+}
+
+.btn,
+.btn-success,
+.btn-danger {
+	font-size: 2.4rem;
+	font-weight: 500;
+	padding: 1.4rem 2rem;
+	border-radius: 10px;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-disabled {
+	pointer-events: none;
+	opacity: 0.4;
+	font-size: 2.4rem;
+	font-weight: 500;
+	padding: 1.4rem 2rem;
+	border-radius: 8px;
+	color: var(--white);
+	transition: all 200ms;
+	width: 100%;
+	text-decoration: line-through;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	background-color: var(--gray);
+	border: none;
+}
+
+.btn {
+	border: solid 3px var(--white);
+	color: var(--white);
+	background-color: var(--black);
+}
+
+.btn:hover,
+.active {
+	cursor: pointer;
+	background-color: var(--darkgray);
+	border: solid 3px var(--white);
+	box-shadow: 0 0 10px 5px var(--white);
+}
+
+.btn-danger {
+	border: solid 3px var(--darkred);
+	color: var(--darkred);
+	background-color: var(--black);
+}
+
+.btn-danger:hover {
+	cursor: pointer;
+	background-color: var(--red);
+	color: var(--white);
+	box-shadow: 0 0 15px 1px var(--lightred);
+	border: solid 3px var(--darkred);
+}
+
+.btn-success {
+	border: solid 3px var(--darkestgreen);
+	color: var(--darkestgreen);
+	background-color: var(--black);
+}
+
+.btn-success:hover {
+	cursor: pointer;
+	background-color: var(--green);
+	color: var(--white);
+	box-shadow: 0 0 15px 1px var(--lightgreen);
+	border: solid 3px var(--darkestgreen);
+}
+
+.btn > svg,
+.btn-success > svg,
+.btn-danger > svg {
+	fill: currentColor;
+	font-size: 3rem;
+}
+
+.btn > svg:hover {
+	color: var(--white);
+	cursor: pointer;
+}
+
+.link,
+.link > p, .link > h4, .link > svg {
+	color: var(--white);
+	transition: all 300ms ease-in-out;
+	text-decoration: none;
+}
+
+.link:hover,
+.link > p:hover,
+.link > h4:hover, .link > svg:hover {
+	color: var(--orange);
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.spinner-grow-size {
+	width: 3rem;
+	height: 3rem;
+}
+
+.margin-auto {
+	margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Pantallas Grandes */
+@media (max-width: 2559px) and (min-width: 1440px) {
+	form {
+		padding: 4rem 1rem;
+	}
+
+	label {
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"] {
+		font-size: 1.6rem;
+		padding: 1.2rem 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	textarea {
+		font-size: 1.6rem;
+		height: 20rem;
+		padding: 1rem 1.5rem;
+		line-height: 2.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.btn,
+	.btn-success,
+	.btn-danger {
+		border-radius: 5px;
+		font-size: 1.6rem;
+		padding: 1rem 2rem;
+	}
+
+	.btn-disabled {
+		border-radius: 5px;
+		font-size: 1.6rem;
+		font-weight: 400;
+		padding: 1rem 2rem;
+	}
+
+	.btn {
+		border: solid 3px var(--white);
+	}
+
+	.btn:hover,
+	.active {
+		border: solid 3px var(--white);
+	}
+
+	.btn-danger {
+		border: solid 3px var(--darkred);
+	}
+
+	.btn-danger:hover {
+		border: solid 3px var(--darkred);
+	}
+
+	.btn-success {
+		border: solid 3px var(--darkestgreen);
+	}
+
+	.btn-success:hover {
+		border: solid 3px var(--darkestgreen);
+	}
+
+	.spinner-grow-size {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Laptops */
+@media (max-width: 1439px) and (min-width: 1024px) {
+	label {
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+
+	form {
+		padding: 4rem 1rem;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"] {
+		font-size: 1.6rem;
+		padding: 1.2rem 1rem;
+		margin-bottom: 3rem;
+	}
+
+	textarea {
+		font-size: 1.6rem;
+		height: 20rem;
+		padding: 1rem 1.5rem;
+		line-height: 2.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.btn,
+	.btn-success,
+	.btn-danger,
+	.paragraph {
+		border-radius: 5px;
+		font-size: 1.6rem;
+		padding: 1rem 2rem;
+	}
+
+	.btn-disabled {
+		border-radius: 5px;
+		font-size: 1.6rem;
+		padding: 1rem 2rem;
+	}
+
+	.btn {
+		border: solid 3px var(--white);
+	}
+
+	.btn:hover,
+	.active {
+		border: solid 3px var(--white);
+	}
+
+	.btn-danger {
+		border: solid 3px var(--darkred);
+	}
+
+	.btn-danger:hover {
+		border: solid 3px var(--darkred);
+	}
+
+	.btn-success {
+		border: solid 3px var(--darkestgreen);
+	}
+
+	.btn-success:hover {
+		border: solid 3px var(--darkestgreen);
+	}
+
+	.spinner-grow-size {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+	label {
+		font-size: 1.4rem;
+		line-height: 3rem;
+	}
+
+	form {
+		padding: 3rem 1rem 2rem 1rem;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"] {
+		font-size: 1.3rem;
+		padding: 1rem;
+		margin-bottom: 2rem;
+		width: 100%;
+	}
+
+	textarea {
+		font-size: 1.4rem;
+		height: 15rem;
+		padding: 1rem 1.2rem;
+		line-height: 1.7rem;
+		margin-bottom: 2rem;
+	}
+
+	.btn,
+	.btn-success,
+	.btn-danger,
+	.paragraph {
+		border-radius: 5px;
+		font-size: 1.4rem;
+		padding: 0.9rem 2rem;
+	}
+
+	.btn-disabled {
+		border-radius: 5px;
+		font-size: 1.4rem;
+		padding: 0.9rem 2rem;
+	}
+
+	.btn {
+		border: solid 2px var(--white);
+	}
+
+	.btn:hover,
+	.active {
+		border: solid 2px var(--white);
+	}
+
+	.btn-danger {
+		border: solid 2px var(--darkred);
+	}
+
+	.btn-danger:hover {
+		border: solid 2px var(--darkred);
+	}
+
+	.btn-success {
+		border: solid 2px var(--darkestgreen);
+	}
+
+	.btn-success:hover {
+		border: solid 2px var(--darkestgreen);
+	}
+
+	.spinner-grow-size {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Estilos para Móviles */
+@media (max-width: 767px) {
+	form {
+		border-radius: 10px;
+		padding: 0 1rem;
+	}
+
+	label {
+		font-size: 1.4rem;
+		line-height: 2.5rem;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="number"] {
+		font-size: 1.4rem;
+		text-align: left;
+		padding: 1rem;
+		margin-bottom: 2rem;
+		border-radius: 5px;
+		transition: all 400ms;
+	}
+
+	textarea {
+		font-size: 1.4rem;
+		height: 15rem;
+		padding: 1rem;
+		border-radius: 5px;
+		line-height: 1.9rem;
+		margin-bottom: 2rem;
+	}
+
+	input[type="submit"] {
+		font-size: 1.3rem;
+	}
+
+	.btn,
+	.btn-success,
+	.btn-danger,
+	.paragraph {
+		font-size: 1.4rem;
+		padding: 0.5rem 1.5rem;
+		border-radius: 5px;
+	}
+
+	.btn-disabled {
+		font-size: 1.4rem;
+		padding: 0.5rem 1.5rem;
+		border-radius: 5px;
+	}
+
+	.btn {
+		border: solid 2px var(--white);
+	}
+
+	.btn:hover,
+	.active {
+		border: solid 2px var(--white);
+	}
+
+	.btn-danger {
+		border: solid 2px var(--darkred);
+	}
+
+	.btn-danger:hover {
+		border: solid 2px var(--darkred);
+	}
+
+	.btn-success {
+		border: solid 2px var(--darkestgreen);
+	}
+
+	.btn-success:hover {
+		border: solid 2px var(--darkestgreen);
+	}
+
+	.spinner-grow-size {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
