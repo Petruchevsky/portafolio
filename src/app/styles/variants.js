@@ -495,7 +495,7 @@ export const fallingDownRotateX = {
 		transition: {
 			y: {
 				type: "spring",
-				mass: 4.5,
+				mass: 1,
 				stiffness: 300,
 				damping: 20,
 				duration: 1,
@@ -505,8 +505,9 @@ export const fallingDownRotateX = {
 				delay: 0.7,
 				duration: 1,
 				type: "spring",
+				stiffness: 200,
 				bounce: 0.5,
-				mass: 2,
+				mass: 1,
 			},
 			textShadow: {
 				delay: 1,

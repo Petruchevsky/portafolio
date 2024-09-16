@@ -10,6 +10,7 @@ import {
 	hoverLink,
 	slideFromDownRotateY,
 	fallingDownRotateX,
+	fadeInAndChangeBgColor,
 } from "../styles/variants";
 import { IoArrowBackCircle } from "react-icons/io5";
 import Image from "next/image";
@@ -23,7 +24,7 @@ function ReadMeLeonor() {
 	return (
 		<motion.main
 			key="main"
-			variants={fadeIn}
+			variants={fadeInAndChangeBgColor}
 			className={styles["main-container-readme"]}
 			initial="hidden"
 			whileInView="show"

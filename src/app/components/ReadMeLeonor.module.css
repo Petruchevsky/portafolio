@@ -48,9 +48,8 @@
 }
 
 .content-readme p {
-	color: rgb(87, 87, 87);
+	color: var(--white);
 	text-align: center;
-	
 }
 
 .content-readme img {
@@ -67,7 +66,7 @@
 	gap: 1rem;
 	padding-bottom: 3rem;
 	width: 45%;
-	background: rgba(0,0,0,0.05);
+	background: rgba(0,0,0,0.2);
 	border-radius: 20px;
 }
 
@@ -105,7 +104,7 @@
 	gap: 1rem;
 	padding-bottom: 3rem;
 	width: 45%;
-	background: rgba(0,0,0,0.05);
+	background: rgba(0,0,0,0.2);
 	border-radius: 20px;
 }
 
