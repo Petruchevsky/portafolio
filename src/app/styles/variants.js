@@ -148,7 +148,7 @@ export const fadeInAndChangeBgColor = {
 			"var(--gradientBlue)",
 			"var(--gradientOrange)",
 			"var(--gradientCyan)",
-			"var(--gradientGray)",
+			"var(--gradientYellow0)",
 		],
 		transition: {
 			delayChildren: 1,
