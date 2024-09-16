@@ -14,6 +14,8 @@ import {
 	genkidama,
 	firefly,
 	bounce,
+	fadeInAndChangeBgColor2,
+	fadeInAndChangeBgColor3,
 } from "../styles/variants";
 
 

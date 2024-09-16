@@ -2,10 +2,11 @@
 .page-container-contact {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
    padding: 10rem 0;
    gap: 10rem;
+	height: 100vh;
 }
 
 .typed-h1-contact {

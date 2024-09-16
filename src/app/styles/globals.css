@@ -297,15 +297,15 @@
 			hsla(354.87, 93.43%, 58.24%, 1) 0%,
 			hsla(354.87, 93.43%, 58.24%, 0) 100%
 		);
-	--gradientYellow: linear-gradient(360deg, #000000,#000000, #3b3300, #948800, #ffdd00);
-	--gradientRed: linear-gradient(315deg, #000000,#000000, #320000, #650000, #ff2c2c);
-	--gradientGreen: linear-gradient(270deg, #000000,#000000, #002405, #116f00, #11ff00);
-	--gradientPurple: linear-gradient(225deg, #000000#000000, #0e0027, #420183, #8c00ff);
-	--gradientPink: linear-gradient(180deg, #000000,#000000, #370024, #90005e, #ff00cc);
-	--gradientBlue: linear-gradient(135deg, #000000,#000000, #000328, #001677, #284fff);
-	--gradientOrange: linear-gradient(90deg, #000000,#000000, #5c2e00, #943b00, #ff8c00);
-	--gradientCyan: linear-gradient(45deg, #000000,#000000, #002e2e, #007474, #00fff2);
-	--gradientYellow0: linear-gradient(0deg, #000000,#000000, #3b3300, #948800, #ffdd00);
+	--gradientYellow: linear-gradient(360deg, #000000,#000000, #000000, #3b3300, #948800, #ffdd00);
+	--gradientBlue: linear-gradient(315deg, #000000,#000000, #000000, #000328, #001677, #284fff);
+	--gradientGreen: linear-gradient(270deg, #000000,#000000, #000000, #042400, #085b00, #7cec66);
+	--gradientRed: linear-gradient(225deg, #000000,#000000, #000000, #330000, #730000, #e60909);
+	--gradientCyan: linear-gradient(180deg, #000000,#000000, #000000, #002e2e, #007474, #00fff2);
+	--gradientPink: linear-gradient(135deg, #000000,#000000, #000000, #33001e, #73004c, #ec0dec);
+	--gradientOrange: linear-gradient(90deg, #000000,#000000, #000000, #5c0000, #940000, #ff2f00);
+	--gradientPurple: linear-gradient(45deg, #000000,#000000, #000000, #0e0027, #420183, #8c00ff);
+	--gradientYellow0: linear-gradient(0deg, #000000,#000000, #000000, #3b3300, #948800, #ffdd00);
 	
 	--gradientCyan183: linear-gradient(
 		183deg,

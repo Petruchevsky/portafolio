@@ -141,13 +141,13 @@ export const fadeInAndChangeBgColor = {
 		opacity: 1,
 		backgroundImage: [
 			"var(--gradientYellow)",
-			"var(--gradientRed)",
-			"var(--gradientGreen)",
-			"var(--gradientPurple)",
-			"var(--gradientPink)",
 			"var(--gradientBlue)",
-			"var(--gradientOrange)",
+			"var(--gradientGreen)",
+			"var(--gradientRed)",
 			"var(--gradientCyan)",
+			"var(--gradientPink)",
+			"var(--gradientOrange)",
+			"var(--gradientPurple)",
 			"var(--gradientYellow0)",
 		],
 		transition: {
@@ -156,8 +156,8 @@ export const fadeInAndChangeBgColor = {
 			opacity: { duration: 2, ease: "easeInOut" },
 			backgroundImage: {
 				type: "tween",
-				duration: 9,
-				ease: "easeInOut",
+				duration: 18,
+				ease: "circInOut",
 				repeat: Infinity,
 				repeatType: "loop",
 			},
@@ -256,7 +256,7 @@ export const fadeInAndChangeBgColor3 = {
 			opacity: { duration: 2, ease: "easeInOut" },
 			backgroundImage: {
 				type: "tween",
-				duration: 27,
+				duration: 18,
 				ease: "easeInOut",
 				repeat: Infinity,
 				repeatType: "loop",
