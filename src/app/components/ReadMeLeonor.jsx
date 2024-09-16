@@ -30,13 +30,6 @@ function ReadMeLeonor() {
 			whileInView="show"
 			viewport={{ amount: 0.1, threshold: 0.1, once: true }}
 		>
-			<video
-				loop
-				muted
-				autoPlay
-				src="https://res.cloudinary.com/dkkvoyfqz/video/upload/v1724949465/soft-colors-video_ov106z.mp4"
-			/>
-
 			<motion.section
 				key="section1"
 				className={styles["content-readme"]}
