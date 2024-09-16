@@ -45,7 +45,7 @@ function HomeComp() {
 								Desarrollador Web Junior
 							</h2>
 							<h2>
-								<strong>JavaScript Jr.</strong> (FullStack)
+								<strong>JavaScript</strong> FullStack
 							</h2>
 						</Slide>
 					</div>
