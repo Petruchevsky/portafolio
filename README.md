@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mi Portafolio Web
 
-## Getting Started
+Un sitio web que demuestra mis habilidades como desarrollador fullstack. Aquí muestro las tecnologías que utilizo, mis proyectos más destacados y algunos aspectos de mi vida personal. Además, podrás contactarme a través de un formulario y descargar mi currículum en formato PDF.
 
-First, run the development server:
+## 🚀 Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Frontend:**
+- React
+- Next.js
+- CSS Vanilla
+- React Awesome Reveal
+- Framer Motion
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Backend:**
+- Next.js
+- Nodemailer
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌟 Características Principales
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Homepage**: Presentación rápida de mis habilidades y enfoque como desarrollador.
+- **Sobre mí**: Una sección donde comparto detalles personales como quién soy, dónde vivo, y mis hobbies.
+- **Proyectos**: Exposición de mis proyectos más importantes, con enlaces a sus repositorios y descripciones.
+- **Sobre este portafolio**: Información sobre cómo fue desarrollado este sitio y las tecnologías utilizadas.
+- **Contacto**: Un formulario para que puedan escribirme directamente, además de opciones para descargar mi CV y enlaces para contactarme por correo electrónico, teléfono y WhatsApp.
 
-## Learn More
+## 🌐 Deploy y Enlaces
 
-To learn more about Next.js, take a look at the following resources:
+El portafolio está desplegado en Vercel, puedes visitarlo en el siguiente enlace:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[https://www.moises-web.cl](https://www.moises-web.cl)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠 Instalación y Configuración
 
-## Deploy on Vercel
+Este portafolio está diseñado únicamente para uso personal y no está destinado a ser clonado ni ejecutado en otras máquinas.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contribución
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este proyecto no está abierto a contribuciones de terceros.
+
+## 📞 Contacto
+
+Si deseas ponerte en contacto conmigo, puedes hacerlo a través de la sección de **Contacto** en el portafolio, donde encontrarás:
+
+- Formulario de contacto
+- Correo electrónico
+- Teléfono
+- WhatsApp
+
+---
+
+Gracias por visitar mi portafolio. Espero que te guste y que podamos estar en contacto pronto.
