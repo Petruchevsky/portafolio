@@ -9,7 +9,7 @@ function Header() {
 			<LogoMoisesWEBAnimatedSVG className="logo-header" />
 			<Slide direction="right">
 				<h2 className="header-h2">
-					Moisés Berdichevsky Argandoña Desarrollador Web React/Nextjs
+					Moisés Berdichevsky Argandoña Desarrollador Web React / Nextjs
 				</h2>
 			</Slide>
 		</header>

@@ -55,7 +55,7 @@ function HomeComp() {
 						Soy un apasionado de la programación, la tecnología, la música y las
 						plantas. A pesar de ser Ingeniero Agrónomo de profesión, he
 						recorrido un camino autodidacta para aprender a desarrollar sitios
-						en React/Nextjs. Disfruto especialmente cuando tengo la oportunidad de
+						en React / Nextjs. Disfruto especialmente cuando tengo la oportunidad de
 						trabajar en equipo en proyectos nuevos, ya que considero que es una
 						excelente manera de aprender de otros al mismo tiempo que cultivas
 						amistad. Ahora, estoy listo para formar parte de un equipo de
