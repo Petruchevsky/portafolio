@@ -87,15 +87,12 @@ export default function ProyectosComp() {
 					<p>
 						Desde que decidí empezar a desarrollar proyectos como método de
 						aprendizaje, de inmediato me puse como meta hacerlo de manera
-						Fullstack, porque quería entender el flujo completo de construcción
+						fullstack, porque quería entender el flujo completo de construcción
 						de una aplicación web, además de como se comunica frontend y backend
 						por medio de solicitudes http.
 					</p>
 					<p>
-						Esto no quiere decir que esté centrado en colaborar solo como
-						desarrollador FullStack en mis futuros empleos, es más, prefiero que
-						mis funciones de rutina sean un poco más acotadas para lograr
-						especializarme y volverme el mejor en un área específica.
+						En el proceso de construcción de mis proyectos, levanté bases de datos, aprendí a interactuar con ellas, creé lógica de autenticación, levanté la API que maneja la lógica de negocio por completo, y gracias a esto me pude dar cuenta que mi área favorita es el frontend. Actualmente estoy especializándome y profundizando más en dicha área.
 					</p>
 				</div>
 			</Zoom>

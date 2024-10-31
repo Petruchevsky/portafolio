@@ -39,7 +39,7 @@ function AboutComp() {
 					>
 						<div>
 							<div className="edad-titulo">
-								<p>Desarrollador Web FullStack (JavaScript / React / Next)</p>
+								<p>Desarrollador Web Frontend React / Next.js</p>
 								<p>Ingeniero Agrónomo Universidad Santo Tomás</p>
 								<p>Abierto a especialización según puesto</p>
 							</div>

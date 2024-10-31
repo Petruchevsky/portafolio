@@ -1,7 +1,7 @@
 /* ---------------------------------------------------------------------------------------------------*/
 /* Estilos para Pantallas 4K*/
 .banner-about {
-	background-image: url("https://res.cloudinary.com/dkkvoyfqz/image/upload/v1719436857/dark-bg_hpw85d.jpg");
+	background-image: url("https://res.cloudinary.com/dkkvoyfqz/video/upload/v1730245611/black-homepage-bg_a6oe6d.mp4");
 	background-position: center;
 	height: auto;
 	width: 100%;
@@ -12,6 +12,17 @@
 	gap: 0rem;
 	position: relative;
 	padding: 2rem 0 7rem 0;
+}
+
+.banner-about > video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: brightness(1);
 }
 
 .banner-about::before {
@@ -57,21 +68,20 @@
 
 .intro-about {
 	color: var(--lightgray);
-	width: 80%;
+	width: 75%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	border-radius: 10px;
-	padding: 3rem 4rem;
+	padding: 3rem 0;
 	margin: 2rem 0;
-	background: rgba(0, 0, 0, 0.7);
-	box-shadow: inset 0px 0px 20px 5px var(--gray);
+	text-shadow: 0 0 10px white;
 }
 
 .mi-stack-container {
 	width: 100%;
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -81,9 +91,8 @@
 }
 
 .mi-stack-h2 {
-	display: flex;
-	align-items: center;
-	width: 53rem;
+	width: auto;
+	margin: 0 auto;
 	height: 7rem;
 	text-align: left;
 }
@@ -102,6 +111,48 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+}
+
+.animaciones-cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
+	gap: 2rem;
+	padding: 2rem 3rem;
+	border: solid 2px var(--cyan);
+	border-radius: 20px;
+	box-shadow: 0 0 15px 2px var(--cyan);
+	width: 34rem;
+}
+
+.actualmente-aprendiendo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 2rem;
+	padding: 2rem 3rem;
+	border: solid 2px var(--blue);
+	border-radius: 20px;
+	box-shadow: 0 0 15px 5px var(--blue);
+	width: 61rem;
+}
+
+.actualmente-aprendiendo > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.animaciones-el {
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: 1rem;
 }
@@ -133,6 +184,16 @@
 	.individual-icon-div-stack {
 		width: 10rem;
 		height: 12rem;
+	}
+
+	.animaciones-cont {
+		border-radius: 10px;
+		width: 25rem;
+	}
+	
+	.actualmente-aprendiendo {
+		border-radius: 10px;
+		width: 43rem;
 	}
 }
 
@@ -188,6 +249,19 @@
 		width: 8rem;
 		height: 12rem;
 		gap: 0;
+	}
+
+	.animaciones-cont {
+		border-radius: 10px;
+		width: 23rem;
+		gap: 1rem;
+	}
+	
+	.actualmente-aprendiendo {
+		border-radius: 10px;
+		width: 40rem;
+		gap: 1rem;
+		margin-bottom: 5rem;
 	}
 }
 
@@ -257,6 +331,20 @@
 		height: 8rem;
 		gap: 0;
 	}
+
+	.animaciones-cont {
+		border-radius: 10px;
+		width: 23rem;
+		gap: 1rem;
+		margin-bottom: 3rem;
+	}
+	
+	.actualmente-aprendiendo {
+		border-radius: 10px;
+		width: 40rem;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
 }
 
 /* ---------------------------------------------------------------------------------------------------*/
@@ -325,5 +413,21 @@
 		width: 9rem;
 		height: 8rem;
 		gap: 0;
+	}
+
+	.animaciones-cont {
+		border-radius: 10px;
+		width: 95%;
+		gap: 1rem;
+		margin-bottom: 0rem;
+		padding: 2rem 1.5rem
+	}
+	
+	.actualmente-aprendiendo {
+		border-radius: 10px;
+		width: 95%;
+		gap: 1rem;
+		margin-bottom: 2rem;
+		padding: 2rem 1.5rem
 	}
 }

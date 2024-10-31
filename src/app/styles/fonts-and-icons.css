@@ -77,6 +77,10 @@ svg {
 	text-align: center;
 }
 
+.react-icon {
+	width: 4.5rem;
+}
+
 /* --------------------------------------------------------------------------- */
 
 /* Estilos para Pantallas Grandes */
@@ -141,6 +145,10 @@ svg {
 		font-size: 1.3rem;
 		line-height: 2rem;
 	}
+
+	.react-icon {
+		width: 3rem;
+	}
 }
 
 /* --------------------------------------------------------------------------- */
@@ -203,6 +211,10 @@ svg {
 		margin: 0 auto;
 		text-align: center;
 		line-height: 2rem;
+	}
+
+	.react-icon {
+		width: 3rem;
 	}
 }
 
@@ -267,6 +279,10 @@ svg {
 		text-align: center;
 		line-height: 2rem;
 	}
+
+	.react-icon {
+		width: 2.5rem;
+	}
 }
 
 /* --------------------------------------------------------------------------- */
@@ -330,5 +346,9 @@ svg {
 		margin: 0 auto;
 		text-align: center;
 		line-height: 2rem;
+	}
+
+	.react-icon {
+		width: 2.5rem;
 	}
 }

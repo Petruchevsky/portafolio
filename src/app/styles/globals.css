@@ -506,7 +506,7 @@ textarea:focus {
 	cursor: pointer;
 	background-color: var(--darkgray);
 	border: solid 3px var(--white);
-	box-shadow: 0 0 10px 5px var(--white);
+	box-shadow: 0 0 10px 2px var(--white);
 }
 
 .btn-danger {
